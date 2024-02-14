@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ekart/static/css/main.3f4ef45a.chunk.css",
-    "main.js": "/ekart/static/js/main.8ded05ee.chunk.js",
-    "main.js.map": "/ekart/static/js/main.8ded05ee.chunk.js.map",
+    "main.js": "/ekart/static/js/main.176a43e7.chunk.js",
+    "main.js.map": "/ekart/static/js/main.176a43e7.chunk.js.map",
     "runtime~main.js": "/ekart/static/js/runtime~main.c875fdd7.js",
     "runtime~main.js.map": "/ekart/static/js/runtime~main.c875fdd7.js.map",
-    "static/js/2.417f007a.chunk.js": "/ekart/static/js/2.417f007a.chunk.js",
-    "static/js/2.417f007a.chunk.js.map": "/ekart/static/js/2.417f007a.chunk.js.map",
+    "static/js/2.19b1487f.chunk.js": "/ekart/static/js/2.19b1487f.chunk.js",
+    "static/js/2.19b1487f.chunk.js.map": "/ekart/static/js/2.19b1487f.chunk.js.map",
     "static/js/3.0dc1ceb5.chunk.js": "/ekart/static/js/3.0dc1ceb5.chunk.js",
     "static/js/3.0dc1ceb5.chunk.js.map": "/ekart/static/js/3.0dc1ceb5.chunk.js.map",
     "index.html": "/ekart/index.html",
-    "precache-manifest.73d22f03eaf82ad1db6c97575404fc86.js": "/ekart/precache-manifest.73d22f03eaf82ad1db6c97575404fc86.js",
+    "precache-manifest.82e8c63755e3f1da024d8e499959c04f.js": "/ekart/precache-manifest.82e8c63755e3f1da024d8e499959c04f.js",
     "service-worker.js": "/ekart/service-worker.js",
     "static/css/main.3f4ef45a.chunk.css.map": "/ekart/static/css/main.3f4ef45a.chunk.css.map"
   }
