@@ -1,6 +1,7 @@
 import React from 'react';
 import './Product.css';
-import { useStateValue } from './StateProvider';
+import { Link } from 'react-router-dom';
+import { useStateValue } from '../../StateProvider';
 
 function Product({ id, title, image, price, rating}) {
   const [{basket}, dispatch] = useStateValue();
@@ -20,8 +21,12 @@ function Product({ id, title, image, price, rating}) {
   };
 
   return (
+    <Link to={`/product/${id}`} className='product'> {/* Link to navigate to single product page */}
     <div className='product'>
-        <div className='product_info'>
+      <div className='product_imgBx align-items-center justify-content-center'>
+        <img src={image} alt='' />
+      </div>
+        <div className='product_info text-white'>
           <p>{title}</p>
           <p className='product_price'>
             <small>$</small>
@@ -34,10 +39,10 @@ function Product({ id, title, image, price, rating}) {
               
             </div>
         </div>
-        <img src={image} alt='' />
 
         <button onClick={addToBasket}>Add To Cart</button>
     </div>
+    </Link>
   )
 }
 

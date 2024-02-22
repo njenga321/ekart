@@ -1,0 +1,17 @@
+footer{
+    background-color: white !important;
+}
+footer:not(:first-child) {
+    border-top: 1px solid var(--border-color);
+}
+footer .input-group >input[type=text] {
+    background-color: var(--theme-color);
+    color: white;
+}
+footer .input-group >input::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+footer .input-group > span {
+    background-color: var(--theme-color) !important;
+}

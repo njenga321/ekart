@@ -1,0 +1,37 @@
+
+.small-banner{
+    width: 49%;
+    overflow: hidden;
+}
+.small-banner img{
+    transition: 0.3s;
+}
+.small-banner img:hover{
+    transform: scale(1.05);
+}
+.small-banner-content {
+    top: 25%;
+    left: 10%;
+}
+.small-banner-content h4 {
+    font-size: 12px;
+    line-height: 5px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--label-color);
+    margin: 0 0 12px;
+}
+.small-banner-content h5 {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    text-transform: none;
+}
+.small-banner-content p{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.4;
+}
+

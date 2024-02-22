@@ -1,16 +1,7 @@
 
 import './App.css';
-import Checkout from './Checkout';
-import Header from './Header';
-import Home from './Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Login from './Login';
-import Payment from './Payment';
-import Orders from './Order.js';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import React, { useEffect } from 'react';
-import "./firebase.js";
-import { useStateValue } from './StateProvider.js';
-import { auth } from './firebase.js';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
@@ -43,21 +34,21 @@ function App() {
 
   return (
     // BEM
-    <Router>
+    <HashRouter>
       <div className="app">
         
+          <Routes>
+            <Route index path='/' element={<><Header /><Home /><Footer /></>} />
+            <Route path='/checkout' element={<><Header /><Checkout /><Footer /></> } />
+            <Route path='/login' element={<Login /> } />
+            <Route path='/payment' element={<><Header /><Elements stripe={promise}><Payment /><Footer /></Elements></> } />
+            <Route path='/orders' element={<><Header /><Orders /><Footer /></> } />
+            <Route path="/product/:productId" element={<><Header /><SingleProduct/></>} />
+ 
+          </Routes>
         
-        <Routes>
-          <Route index path='/' element={<><Header /><Home /></>} />
-          <Route path='/checkout' element={<><Header /><Checkout /></> } />
-          <Route path='/login' element={<Login /> } />
-          <Route path='/payment' element={<><Header /><Elements stripe={promise}><Payment /></Elements></> } />
-          <Route path='/orders' element={<><Header /><Orders /></> } />
-          
-          
-        </Routes>
       </div>
-    </Router>
+      </HashRouter>
   );
 }
 
