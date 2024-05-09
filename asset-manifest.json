@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/ekart/static/css/main.cb21a814.chunk.css",
-    "main.js": "/ekart/static/js/main.8e2bf5ac.chunk.js",
-    "main.js.map": "/ekart/static/js/main.8e2bf5ac.chunk.js.map",
-    "runtime~main.js": "/ekart/static/js/runtime~main.6cd9f72a.js",
-    "runtime~main.js.map": "/ekart/static/js/runtime~main.6cd9f72a.js.map",
-    "static/css/2.3ba67ca0.chunk.css": "/ekart/static/css/2.3ba67ca0.chunk.css",
-    "static/js/2.c7c7bf9a.chunk.js": "/ekart/static/js/2.c7c7bf9a.chunk.js",
-    "static/js/2.c7c7bf9a.chunk.js.map": "/ekart/static/js/2.c7c7bf9a.chunk.js.map",
-    "static/js/3.0ec7c975.chunk.js": "/ekart/static/js/3.0ec7c975.chunk.js",
-    "static/js/3.0ec7c975.chunk.js.map": "/ekart/static/js/3.0ec7c975.chunk.js.map",
-    "index.html": "/ekart/index.html",
-    "precache-manifest.c588046282e954b44dc17f2591a74a37.js": "/ekart/precache-manifest.c588046282e954b44dc17f2591a74a37.js",
-    "service-worker.js": "/ekart/service-worker.js",
-    "static/css/2.3ba67ca0.chunk.css.map": "/ekart/static/css/2.3ba67ca0.chunk.css.map",
-    "static/css/main.cb21a814.chunk.css.map": "/ekart/static/css/main.cb21a814.chunk.css.map",
-    "static/media/slick-theme.css": "/ekart/static/media/slick.f97e3bbf.svg"
+    "main.css": "/static/css/main.cb21a814.chunk.css",
+    "main.js": "/static/js/main.b5ec2984.chunk.js",
+    "main.js.map": "/static/js/main.b5ec2984.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.57e59515.js",
+    "runtime~main.js.map": "/static/js/runtime~main.57e59515.js.map",
+    "static/css/2.132a1910.chunk.css": "/static/css/2.132a1910.chunk.css",
+    "static/js/2.8dc824cc.chunk.js": "/static/js/2.8dc824cc.chunk.js",
+    "static/js/2.8dc824cc.chunk.js.map": "/static/js/2.8dc824cc.chunk.js.map",
+    "static/js/3.0ec7c975.chunk.js": "/static/js/3.0ec7c975.chunk.js",
+    "static/js/3.0ec7c975.chunk.js.map": "/static/js/3.0ec7c975.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ff143101a8040fa8ff9e614bc26c42fd.js": "/precache-manifest.ff143101a8040fa8ff9e614bc26c42fd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.132a1910.chunk.css.map": "/static/css/2.132a1910.chunk.css.map",
+    "static/css/main.cb21a814.chunk.css.map": "/static/css/main.cb21a814.chunk.css.map",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg"
   }
 }
