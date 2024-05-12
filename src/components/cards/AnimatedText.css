@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.lines-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  width: 80%;
+}
+
+.line {
+  white-space: pre-wrap; 
+  margin-bottom: 3px;
+}
+@media (max-width: 480px) {
+  .lines-container{
+    font-size: 16px;
+  }
+}

@@ -3,7 +3,7 @@ import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./firebase";
+import { auth } from "../../config/firebase";
 
 function Login() {
     const navigate = useNavigate();
@@ -19,7 +19,7 @@ function Login() {
         .then((auth) => {
             //successful created a new user with email and password
             if (auth) {
-                navigate('/')
+                navigate('/') // to home
             }
         })
         .catch(error => alert(error.message))

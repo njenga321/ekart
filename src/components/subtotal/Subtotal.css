@@ -2,21 +2,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 280px;
-    height: 180px;
-    padding: 5px;
+    flex: 50%;
+    padding: 10px 30px;
     background-color: #ffffff;
-    border: 1px solid #dddddd;
+    border: 1px solid var(--div-border);
     border-radius: 3px;
 }
 
 .subtotal > p {
-    padding: 10px 0;
-    border-bottom: 1px solid rgb(221, 223, 208);
+    padding: 5px 0;
 }
 .subtotal_price {
     display: flex;
     justify-content: space-between;
+}
+.subtotal .input-group{
+    border: 1px solid ;
+    margin-bottom: 10px;
+}
+
+.subtotal .input-group > span {
+    background-color: var(--primary-color) !important;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    padding: 8px 16px !important;
+    text-transform: none;
+}
+.subtotal .input-group > span:hover {
+    background-color: var(--dark) !important;
 }
 
 .subtotal_gift {
@@ -29,11 +46,32 @@
 }
 
 .subtotal > button {
-    background-color: #fffb00;
-    border-radius: 2px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
     width: 100%;
-    height: 30px;
     border: 1px solid;
-    border-color: #bdb10b;
-    color: #111;
+    color: var(--theme-color);
+    padding: 8px 16px !important;
+    margin-top: 10px;
+}
+.subtotal > button:hover {
+    background-color: var(--dark);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.paymentLogoImg {
+    display: flex;
+    height: auto;
+    margin-top: 1.5rem;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.paymentLogoImg img {
+    object-fit: contain !important;
+}
+@media (max-width: 480px) {
+    .paymentLogoImg {
+        display: none;
+    }
 }

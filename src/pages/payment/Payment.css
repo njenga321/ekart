@@ -20,21 +20,81 @@
     margin: 0 20px;
     border-bottom: 1px solid lightgray;
 }
+.payment_method {
+    display: flex;
+    align-items: center;
+}
 
 .payment_title {
     flex: 0.2;
 }
 
-.payment_address, .payment_items, .payment_details {
+.delivery_address, .payment_items, .payment_details {
     flex: 0.8;
 }
+.delivery_address {
+    
+  }
+  
+.delivery_address   .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+  }
+  
+.delivery_address   .grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+  }
+  
+.delivery_address   label {
+    font-weight: bold;
+  }
+  
+.delivery_address  input, textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
 
 .payment_details {
     max-width: 400px;
+    margin: 30px 0;
 }
+.payment_method .payment-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 20px; 
+  }
+  
+.payment_method .image-container {
+    overflow: hidden;
+    height: 2rem;
+    width: 3rem;
+    object-fit: contain;
+    border: 0.5px solid #d2dbe0;
+    padding: 5px;
+    align-items: center; 
+  }
+.payment_method .image-container img {
+    height: 100%;
+    object-fit: contain;
+}
+.payment_method  .image-container img {
+    width: 100%; 
+    height: auto;
+  }
+  
 
 .payment_details > h3 {
     padding: 20px o;
+}
+.payment_details .error-message {
+    color: red;
+    margin-bottom: 5px;
+    transition: 0.5s ease-in-out;
 }
 
 .payment_details > form > div > button {
@@ -47,4 +107,16 @@
     font-weight: bolder;
     margin-top: 10px;
     color: black;
+}
+
+
+@media (max-width: 768px) {
+    .payment_section {
+        flex-direction: column;
+        padding: 15px;
+        margin: 0 ;
+    }
+    .payment_details {
+        margin:  0;
+    }
 }

@@ -1,0 +1,104 @@
+.main-slider-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 305px;
+    margin: 0 !important;
+  }
+  
+  .grid-slider {
+    display: grid;
+    grid-auto-flow: column;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 5px;
+    padding: 3px;
+  }
+  
+  .slider-card {
+    /* width: calc((100% - 50px) / 6); */
+    width: 200px;
+    /* max-width: 320px; */
+    height: 280px;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 2px 0;
+    line-height: 1;
+  }
+  .slider-card:hover {
+    -webkit-box-shadow: 3px 3px 10px -9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 24px -9px rgba(66, 68, 90, 1);
+    transform: scale(1.02);
+    transition: 0.3 ease-in-out;
+  }
+  
+  .slider-card-image {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .slider-card-info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+  }
+  .slider-card-title  {
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .slider-card-price {
+    color: #666;
+    font-size: 20px;
+  }
+  .main-slider-container .slider-icon {
+    position: absolute;
+    visibility: hidden;
+    border-radius: 50%;
+  }
+  .main-slider-container:hover .slider-icon{
+    visibility: visible;
+    transition: ease-in-out;
+  }
+
+  .main-slider-container .right {
+    right: 1%;
+  }
+
+  .main-slider-container .left {
+    left: 1%;
+  }
+
+  @media (max-width: 480px) {
+    .main-slider-container {
+      height: 210px;
+    }
+    .slider-card {
+      height: 200px;
+      width: 150px;
+    }
+    .slider-card-image {
+      height: 120px;
+    }
+    .slider-card-title {
+      font-size: 14px;
+    }
+    .slider-card-price {
+      font-size: 14px;
+    }
+  }

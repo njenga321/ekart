@@ -1,0 +1,31 @@
+.product-slider .row{
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+}
+.product-slider .home-subtitle {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0;
+    text-decoration: none;
+}
+.product-slider .home-subtitle a{
+    padding: 4px;
+    font-weight: 300;
+    align-items: center;
+    color: black;
+    text-decoration: none !important;
+}
+.product-slider .home-subtitle p,h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+.store-subtitle {
+    background-color: var(--primary-color);
+    padding: 7px 0;
+    font-size: 20px;
+    margin: 1rem 0;
+    text-align: center;
+    color: white;
+}

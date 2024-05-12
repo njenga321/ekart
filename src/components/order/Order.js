@@ -1,6 +1,6 @@
 import React from 'react';
 import './Order.css';
-import CheckoutProduct from './CheckoutProduct';
+import CheckoutProduct from '../../components/checkoutproduct/CheckoutProduct';
 import CurrencyFormat from 'react-currency-format';
 import moment from 'moment';
 

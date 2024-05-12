@@ -1,11 +1,9 @@
-
-const {onRequest} = require("firebase-functions/v2/https");
+const { onRequest } = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 const functions = require('firebase-functions');
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")
-('sk_test_51OYszYE0o3He6Tzpoq6mvIjJyJQU8y7NoIdDkCk1IxEvw2dQxjp76QHzKY3ULX21ms6DGOi883Am8VIhGPEt74CY00NRyGFRCj')
+const stripe = require("stripe")(process.env.STRIPE_API_KEY); // Access API key from environment variables
 
 // API
 
@@ -13,7 +11,7 @@ const stripe = require("stripe")
 const app = express();
 
 // - Middlewares
-app.use(cors({ origin: true}));
+app.use(cors({ origin: true }));
 
 // - API routes
 app.get('/', (request, response) => response.status(200).send('hello world'))
@@ -25,20 +23,16 @@ app.post('/payments/create', async (request, response) => {
 
     try {
         const paymentIntent = await stripe.paymentIntents.create({
-          amount: total, 
-          currency:"usd",
-          });
-          response.status(201).send({
+            amount: total,
+            currency: "usd",
+        });
+        response.status(201).send({
             clientSecret: paymentIntent.client_secret,
-          });
-      } catch (error) {
-          response.status(500).send({ error: error.message });
-      }
-    });
+        });
+    } catch (error) {
+        response.status(500).send({ error: error.message });
+    }
+});
 
 // - Listen command
-exports.api = functions.https.onRequest(app)
-
-
-// Example endpoint
-// http://127.0.0.1:5001/e-kart-challange/us-central1/api
+exports.api = functions.https.onRequest(app);

@@ -44,27 +44,36 @@
 }
 
 .login_signinButton {
-    background-color: #fffb00;
+    background-color: var(--primary-color);
     border-radius: 2px;
     width: 100%;
-    height: 30px;
+    padding: 10px;
+    border-radius: 3px;
     border: 1px solid;
-    border-color: #bdb10b;
-    color: #111;
+    color: white;
+}
+.login_signinButton:hover {
+    background-color: var(--dark);
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
 }
 
 .login_registerdiv {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .login_registerbutton {
-    border-radius: 2px;
+    border-radius: 3px;
     width: 100%;
-    height: 30px;
+    padding: 10px;
     border: 1px solid lightgrey;
     color: #111;
     margin-top: 10px;
+}
+.login_registerbutton:hover {
+    background-color: var(--dark);
+    color: white;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
 }

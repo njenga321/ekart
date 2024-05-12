@@ -1,0 +1,117 @@
+.small-banner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid with 2 columns by default */
+  gap: 20px; /* Adjust gap as needed */
+  margin: 0;
+}
+
+.small-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.small-banner img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.small-banner:hover img {
+  transform: scale(1.05);
+}
+
+.small-banner-content {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 80%;
+  text-align: left;
+  color: white; 
+}
+
+.small-banner-content h4 {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: white;
+}
+
+.small-banner-content h5 {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.small-banner-content p {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+.animated-banner {
+  background-color: var(--primary-color) !important;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .small-banner-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on devices below 768px */
+  }
+
+  .small-banner-content {
+      top: 20%;
+      left: 5%;
+      width: 90%;
+  }
+
+  .small-banner-content h4 {
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 8px;
+  }
+
+  .small-banner-content h5 {
+      font-size: 20px;
+      line-height: 24px;
+  }
+
+  .small-banner-content p {
+      font-size: 10px;
+      line-height: 16px;
+  }
+}
+
+/* Additional Media Query for even smaller devices */
+@media (max-width: 576px) {
+  .small-banner-content {
+      top: 15%;
+      left: 5%;
+      width: 90%;
+  }
+
+  .small-banner-content h4 {
+      font-size: 8px;
+      line-height: 10px;
+      margin-bottom: 6px;
+  }
+
+  .small-banner-content h5 {
+      font-size: 13px;
+      line-height: 20px;
+  }
+
+  .small-banner-content p {
+      font-size: 7px;
+      line-height: 14px;
+  }
+}

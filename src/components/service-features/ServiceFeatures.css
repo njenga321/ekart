@@ -1,0 +1,11 @@
+@media (max-width: 480px) {
+    .service-features {
+        padding: 1rem 0 !important;
+    }
+    .alice-carousel__stage .gap-15 {
+        gap: 10px;
+    }
+    .alice-carousel__stage-item h6, p{
+        font-size: 0.6rem;
+    }
+}
