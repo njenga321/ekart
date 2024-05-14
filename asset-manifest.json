@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ekart/static/css/main.5ee28480.chunk.css",
+    "main.css": "/ekart/static/css/main.288954f4.chunk.css",
     "main.js": "/ekart/static/js/main.c7adde3a.chunk.js",
     "main.js.map": "/ekart/static/js/main.c7adde3a.chunk.js.map",
     "runtime~main.js": "/ekart/static/js/runtime~main.32719cf8.js",
@@ -11,10 +11,10 @@
     "static/js/3.e69598e0.chunk.js": "/ekart/static/js/3.e69598e0.chunk.js",
     "static/js/3.e69598e0.chunk.js.map": "/ekart/static/js/3.e69598e0.chunk.js.map",
     "index.html": "/ekart/index.html",
-    "precache-manifest.939b35634414716689c7da30ef80b2ec.js": "/ekart/precache-manifest.939b35634414716689c7da30ef80b2ec.js",
+    "precache-manifest.8e4d4e6183a11a621094981d5d760693.js": "/ekart/precache-manifest.8e4d4e6183a11a621094981d5d760693.js",
     "service-worker.js": "/ekart/service-worker.js",
     "static/css/2.3ba67ca0.chunk.css.map": "/ekart/static/css/2.3ba67ca0.chunk.css.map",
-    "static/css/main.5ee28480.chunk.css.map": "/ekart/static/css/main.5ee28480.chunk.css.map",
+    "static/css/main.288954f4.chunk.css.map": "/ekart/static/css/main.288954f4.chunk.css.map",
     "static/media/slick-theme.css": "/ekart/static/media/slick.f97e3bbf.svg"
   }
 }
