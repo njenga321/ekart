@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b1ad4d972eee8cc26aeeca2beea62d1",
+    "revision": "55601a4e29431408e50324c7f2ad14f8",
     "url": "/ekart/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ekart/static/css/2.3ba67ca0.chunk.css"
   },
   {
-    "revision": "36ac8b6b0043ec2edeb2",
-    "url": "/ekart/static/css/main.0311be9a.chunk.css"
+    "revision": "a62310ac6c52045520b0",
+    "url": "/ekart/static/css/main.5983bc36.chunk.css"
   },
   {
     "revision": "05d0cb0fa3e0e063a893",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ekart/static/js/3.e69598e0.chunk.js"
   },
   {
-    "revision": "36ac8b6b0043ec2edeb2",
-    "url": "/ekart/static/js/main.580b1e83.chunk.js"
+    "revision": "a62310ac6c52045520b0",
+    "url": "/ekart/static/js/main.c7adde3a.chunk.js"
   },
   {
     "revision": "34d6dca783571e3c7192",
